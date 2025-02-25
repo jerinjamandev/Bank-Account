@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800 ">
+
+    <section class="relative h-[500px] max-w-md mx-auto py-6 bg-gray-200">
+
+
+        <header>
+            <nav class="mt-6 flex justify-center items-center">
+                <div class="flex mt-10 relative justify-center items-center w-9/12">
+                    <img class="w-48 mb-12" src="./Payoo-MFS-Resources/assets/bg.png" alt="">
+                    <img class="w-12 absolute top-6" src="./Payoo-MFS-Resources/assets/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- input sectio strt -->
+
+         <div class="absolute left-0 right-0 -bottom-[50px] hero bg-gray-200">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-white w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Mobile Number</span>
+                    </label>
+                    <input type="number" placeholder="Enter your number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">4 Digit Pin</span>
+                    </label>
+                    <input type="text" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+</body>
+</html>
