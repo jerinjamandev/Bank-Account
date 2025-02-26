@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-800">
+    
+   <main class="relative min-h-screen max-w-md mx-auto py-6 bg-gray-200">
+    <header id="head-sec" class=" border-b-[1px] pb-4">
+     <div class="flex justify-between px-4 items-center">
+        <div class="flex gap-2 justify-start items-center">
+            <div>
+                <img class="w-8" src="./Payoo-MFS-Resources/assets/Group.png" alt="">
+            </div>
+            <div>
+                <h2 class="font-bold">$ <span id="main-balance">45000</span></h2>
+                <p class="text-[10px] text-gray-700">Available Balance</p>
+            </div>
+        </div>
+
+        <div>
+            <button class="btn btn-outline"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+              </svg>
+             <span> Log Out</span></button>
+        </div>
+     </div>
+    </header>
+
+
+    <section class="px-4 mt-8">
+            <h2 class=" font-bold text-xl">🔥 Welcome to Payooo!</h2>
+            <p class="mt-2 text-[12px]">Enjoy easy and convenient financial services with us. <br>
+                 Cashout charge is low and </p>
+       
+    </section>
+
+
+    <section class="px-4 mt-8">
+
+        <div class="grid grid-cols-3 gap-4">
+            <div id="add-money-toggle" class="border border-gray-400 rounded-md p-4">
+                <img class="w-6 mx-auto" src="./Payoo-MFS-Resources/assets/wallet1.png" alt="">
+                <h2 class="text-center">Add Money</h2>
+            </div>
+
+            <div id="cash-out-toggle" class="border border-gray-400 rounded-md p-4">
+                <img class="w-6 mx-auto" src="./Payoo-MFS-Resources/assets/send1.png" alt="">
+                <h2 class="text-center">Cashout</h2>
+            </div>
+
+            <div class="border border-gray-400 rounded-md p-4">
+                <img class="w-6 mx-auto" src="./Payoo-MFS-Resources/assets/money1.png" alt="">
+                <h2 class="text-center">Transfer Money</h2>
+            </div>
+
+            <div class="border border-gray-400 rounded-md p-4">
+                <img class="w-6 mx-auto" src="./Payoo-MFS-Resources/assets/money1.png" alt="">
+                <h2 class="text-center">Get Bonus</h2>
+            </div>
+
+            <div class="border border-gray-400 rounded-md p-4">
+                <img class="w-6 mx-auto" src="./Payoo-MFS-Resources/assets/wallet1.png" alt="">
+                <h2 class="text-center">Pay Bill</h2>
+            </div>
+
+            <div class="border border-gray-400 rounded-md p-4">
+                <img class="w-6 mx-auto" src="./Payoo-MFS-Resources/assets/wallet1.png" alt="">
+                <h2 class="text-center">Transactions</h2>
+            </div>
+        </div>
+
+        
+    </section>
+
+
+
+
+
+    <section id="add-money-sec" class="px-4 mt-8">
+        <h2>Add Money</h2>
+
+
+         <div class="mt-3">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                    <legend>Select A Bank</legend>
+                     <select class="select w-full max-w-xs">
+                        <option disabled selected>Pick your favorite Simpson</option>
+                        <option>Bikash</option>
+                        <option>Nagad</option>
+                        <option>DBBL</option>
+                      </select>
+
+                 <div class="form-control">
+                    <label class="label py-2">
+                      <span class="label-text">Bank Account Number</span>
+                    </label>
+                    <input type="text" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label py-2">
+                      <span class="label-text">Amount to Add</span>
+                    </label>
+                    <input id="amount-deposit-input" type="number" placeholder="Add Amount to deposit" class="input input-bordered" required />
+                    <label class="label py-2">
+                     <span class="label-text">Pin Number</span>
+                    </label>
+                    <input id="pin-input" type="text" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <a href="#head-sec"> <button id="add-money-btn" class="w-full px-3 py-2 bg-blue-600 rounded-xl">Add Money</button>
+                    </a>
+                      </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+
+
+
+
+
+    <section id="cash-out-sec" class="px-4 mt-8">
+        <h2>Cash Out</h2>
+
+
+         <div class="mt-3">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                 <div class="form-control">
+                    <label class="label py-2">
+                      <span class="label-text">Agent Number</span>
+                    </label>
+                    <input type="email" placeholder="Enter 11 digit number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label py-2">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input type="password" placeholder="Enter amount to withdraw" class="input input-bordered" required />
+                    <label class="label py-2">
+                     <span class="label-text">Pin Number</span>
+                    </label>
+                    <input type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="w-full px-3 py-2 bg-blue-600 rounded-xl">Withdraw Money</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+
+   </main>
+
+
+
+
+
+
+
+
+
+
+<script src="./scriots/add-money.js"></script>
+  <script src="./scriots/toggle.js"></script> 
+</body>
+</html>
