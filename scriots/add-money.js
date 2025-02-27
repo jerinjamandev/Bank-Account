@@ -1,5 +1,4 @@
-document.getElementById('add-money-btn').addEventListener('click',function(event){
-    event.preventDefault();
+function addMoney(){
     const ammountInput=document.getElementById('amount-deposit-input').value ;
     const convertAmmountInput=parseFloat(ammountInput);
     const pinInput=document.getElementById('pin-input').value;
@@ -10,10 +9,14 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
     if(convertPin===1234){
      const sum=convertMainBalance+convertAmmountInput;
       mainBalance.innerText=sum;
+      const mainUl=document.getElementById('ul-main');
+      const liList=tranjection(convertAmmountInput,'add money');
+      mainUl.appendChild(liList);
+
        
     }
 
     else{
         alert('invalid pin');
     }
-})
+}
