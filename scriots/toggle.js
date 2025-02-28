@@ -68,7 +68,7 @@ document.getElementById('get-bonus-toggle').addEventListener('click',function(){
 // pay-bill
 
 
-document.getElementById('pay-bill-sec').addEventListener('click',function(){
+    document.getElementById('pay-bill-toggle').addEventListener('click',function(){
     document.getElementById('cash-out-sec').style.display='none';
     document.getElementById('add-money-sec').style.display='none';
     document.getElementById('transfar-money-sec').style.display='none';
